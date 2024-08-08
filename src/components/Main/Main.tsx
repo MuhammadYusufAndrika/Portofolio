@@ -16,6 +16,7 @@ import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 
+
 export function Main() {
   return (
     <Container>
