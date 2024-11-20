@@ -2,7 +2,8 @@ import { Container } from "./styles";
 import githubIcon from "../../assets/github.svg"
 // import DownloadApp from '../../assets/download.png'
 import externalLink from "../../assets/external-link.svg"
-import ScrollAnimation from "react-animate-on-scroll";
+import ScrollAnimation from "react-animate-on-scroll"
+import SPNWEB from "../../assets/SPNWEB.png";
 
 
 export function Project() {
@@ -25,6 +26,7 @@ export function Project() {
             </header>
             <div className="body">
               <h3>Company Profile: Surya Prima Net</h3>
+
               <p> Creating a dynamic Company Profile Website using Laravel 11 for Backend and FrontEnd using Laravel Blade by using Bootstrap 5.3 for styling. Migrations and models are used to manage data in the database.  </p>
             </div>
             <footer> <ul className="tech-list"> <li>Laravel 11</li> <li>Bootstrap 5.3</li> <li>MysqlDB</li> </ul> </footer>
@@ -357,30 +359,27 @@ export function Project() {
           </div>
         </ScrollAnimation> */}
         
-        {/* <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
               <div className="project-links">
-                <a href="https://madewithluv.in/" target="_blank" rel="noreferrer">
+                <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>MadeWithLuv - HomeDecor Site</h3>
+              <h3>More? In my Github</h3>
               <p>
-                This website sells home decor products and helps people decorate their homes. It is easy to find what you need, whether it's furniture or decorations. The site is useful for people who want to make their homes look nice and need some help.
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>Wordpress</li>
-                <li>Woocommerce</li>
               </ul>
             </footer>
           </div>
-        </ScrollAnimation> */}
+        </ScrollAnimation>
 
       </div>
     </Container>
