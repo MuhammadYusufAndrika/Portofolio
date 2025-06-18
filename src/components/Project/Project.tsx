@@ -20,8 +20,6 @@ export function Project() {
               <div className="project-links">
                 <a href="https://github.com/MuhammadYusufAndrika/SPN-Web.git" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" /></a>
-                <a href="#" target="_blank" rel="noreferrer">
-                </a> 
               </div>
             </header>
             <div className="body">
