@@ -20,7 +20,7 @@
     "react-scripts": "^5.0.1",
     "react-toastify": "^8.1.0",
     "react-tsparticles": "^2.12.2",
-    "styled-components": "^5.3.3",
+    "styled-components": "^5.3.11",
     "typescript": "^5.5.4",
     "validator": "^13.7.0",
     "web-vitals": "^2.1.0"
@@ -53,7 +53,7 @@
     "@types/react-animate-on-scroll": "^2.1.5",
     "@types/react-google-recaptcha": "^2.1.2",
     "@types/react-router-hash-link": "^2.4.4",
-    "@types/styled-components": "^5.1.18",
+    "@types/styled-components": "^5.1.26",
     "@types/validator": "^13.7.1"
   }
 }
