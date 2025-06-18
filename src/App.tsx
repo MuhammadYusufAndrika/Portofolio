@@ -10,9 +10,15 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <Main />
-      <Footer />
+      {
+        <>
+          <Header />
+          <Main />
+          <Footer />
+        </>
+      }
+      
+
     </>
   )
 }

@@ -10,8 +10,8 @@ import instagramIcon from '../../assets/instagram.svg'
 export function Footer() {
   return (
     <Container className="footer">
-      <a href="" className="logo">
-        <span>Yusuf Andrika</span>
+      <a href="#main" className="logo">
+        <span>Yusuf Andrika</span>  
         <span></span>
       </a>
       <div>

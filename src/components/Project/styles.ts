@@ -89,4 +89,21 @@ export const Container = styled.section`
       grid-template-columns: 1fr;
     }
   }
+    // ...existing code...
+      header{
+        // ...existing code...
+        a > img {
+          width: 5.0rem;
+        }
+      }
+      // ...existing code...
+      .body img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 16rem;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin-bottom: 1.5rem;
+      }
 `
