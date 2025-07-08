@@ -13,10 +13,10 @@ export function Contact() {
       </header>
       <div className="contacts">
         <div>
-          <a href="mailto:muhammadyusufandrika@amikom.ac.id">
+          <a href="mailto:andrika00748@gmail.com">
             <img src={emailIconUrl} alt="Email" />
           </a>
-          <a href="mailto:muhammadyusufandrika@amikom.ac.id">Hello@Yusufandrika.com</a>
+          <a href="mailto:andrika00748@gmail.com">Hello@andrika00748</a>
         </div>
         <div>
           <a href="https://api.whatsapp.com/send/?phone=%2B6285669812501&text=Hello+Yusuf">
@@ -25,7 +25,7 @@ export function Contact() {
           <a href="https://api.whatsapp.com/send/?phone=%2B6285669812501&text=Hello+Yusuf">(+62) 85669812501</a>
         </div>
       </div>
-      <Form></Form>
+      <Form />
     </Container>
   );
 }
