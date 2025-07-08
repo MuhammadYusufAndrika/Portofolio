@@ -1,96 +1,99 @@
 import { Container } from "./styles";
 import Yusufandrika from "../../assets/22_11_49011.png";
-import wordpress from "../../assets/wordpress.svg";
-import shopify from "../../assets/shopify.svg";
-import htmlIcon from "../../assets/html-icon.svg";
-import cssIcon from "../../assets/css-icon.svg";
-import jsIcon from "../../assets/js-icon.svg";
-import nodeIcon from "../../assets/node-icon.svg";
-import reactIcon from "../../assets/react-icon.svg";
-import typescriptIcon from "../../assets/typescript-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
-import boostrapIcon from "../../assets/bootstrap-icon.svg";
-import ScrollAnimation from "react-animate-on-scroll";
+import wordpressIconUrl from "../../assets/wordpress.svg";
+import shopifyIconUrl from "../../assets/shopify.svg";
+import htmlIconUrl from "../../assets/html-icon.svg";
+import cssIconUrl from "../../assets/css-icon.svg";
+import jsIconUrl from "../../assets/js-icon.svg";
+import nodeIconUrl from "../../assets/node-icon.svg";
+import reactIconUrl from "../../assets/react-icon.svg";
+import typescriptIconUrl from "../../assets/typescript-icon.svg";
+import vueIconUrl from "../../assets/vue-icon.svg";
+import bootstrapIconUrl from "../../assets/bootstrap-icon.svg";
+import { motion, useAnimation, Variants } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export function About() {
+  const controls = useAnimation();
+  const ref = useRef<HTMLDivElement | null>(null);
+  const lastScrollY = useRef<number>(typeof window !== 'undefined' ? window.scrollY : 0);
+  const direction = useRef<'up' | 'down'>('down');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!ref.current) return;
+      const rect = ref.current.getBoundingClientRect();
+      const inView = rect.top < window.innerHeight && rect.bottom > 0;
+      if (inView) {
+        if (window.scrollY > lastScrollY.current) {
+          direction.current = 'down';
+        } else if (window.scrollY < lastScrollY.current) {
+          direction.current = 'up';
+        }
+        lastScrollY.current = window.scrollY;
+        controls.start(direction.current === 'down' ? 'visibleDown' : 'visibleUp');
+      } else {
+        controls.start('hidden');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [controls]);
+
+  const variants: Variants = {
+    hidden: { opacity: 0, y: 60 },
+    visibleDown: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }, // cubic-bezier
+    },
+    visibleUp: {
+      opacity: 1,
+      y: -20,
+      transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] },
+    },
+  };
+
   return (
     <Container id="about">
-      <div className="about-text">
-        <ScrollAnimation animateIn="fadeInLeft">
-          <h2>About me</h2>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
-          <p>
-            Hi there! I'm Yusuf Andrika, a website developer with a passion for creating custom online experiences for my clients. With a skill set including HTML, CSS, JavaScript, and Php, I have the tools to bring any website vision to
-            life.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+      <motion.div
+        className="about-text"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+      >
+        <h2>About me</h2>
+        <p>
+          Hi there! I'm Yusuf Andrika, a website developer with a passion for
+          creating custom online experiences for my clients. With a skill set
+          including HTML, CSS, JavaScript, and Php, I have the tools to bring
+          any website vision to life.
+        </p>
+        <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p></p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
-          <p>So if you're in need of a new website or just looking to revamp your current online presence, I'd love to chat and see how I can help. Let's bring your website dreams to reality together!</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
-          <h3>Here are my main skills:</h3>
-        </ScrollAnimation>
-        <div className="hard-skills">
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
-              <img src={wordpress} alt="Wordpress" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
-              <img src={shopify} alt="shopify" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
-              <img src={reactIcon} alt="React" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.14 * 1000}>
-              <img src={typescriptIcon} alt="Typescript" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.15 * 1000}>
-              <img src={vueIcon} alt="Vue" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.16 * 1000}>
-              <img src={nodeIcon} alt="Node" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.17 * 1000}>
-              <img src={htmlIcon} alt="Html" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.18 * 1000}>
-              <img src={cssIcon} alt="Css" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
-              <img src={boostrapIcon} alt="bootstrap" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
-              <img src={jsIcon} alt="JavaScript" />
-            </ScrollAnimation>
-          </div>
         </div>
-      </div>
+        <p>
+          So if you're in need of a new website or just looking to revamp your
+          current online presence, I'd love to chat and see how I can help.
+          Let's bring your website dreams to reality together!
+        </p>
+        <h3>Here are my main skills:</h3>
+        <div className="hard-skills">
+          <div className="hability"><img src={wordpressIconUrl} alt="Wordpress" /></div>
+          <div className="hability"><img src={shopifyIconUrl} alt="Shopify" /></div>
+          <div className="hability"><img src={reactIconUrl} alt="React" /></div>
+          <div className="hability"><img src={typescriptIconUrl} alt="Typescript" /></div>
+          <div className="hability"><img src={vueIconUrl} alt="Vue" /></div>
+          <div className="hability"><img src={nodeIconUrl} alt="Node" /></div>
+          <div className="hability"><img src={htmlIconUrl} alt="HTML" /></div>
+          <div className="hability"><img src={cssIconUrl} alt="CSS" /></div>
+          <div className="hability"><img src={bootstrapIconUrl} alt="Bootstrap" /></div>
+          <div className="hability"><img src={jsIconUrl} alt="JavaScript" /></div>
+        </div>
+      </motion.div>
       <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
-          <img src={Yusufandrika} alt="Vinayak Singh" />
-        </ScrollAnimation>
+        <img src={Yusufandrika} alt="Yusuf Andrika" />
       </div>
     </Container>
   );

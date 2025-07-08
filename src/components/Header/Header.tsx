@@ -20,7 +20,7 @@ export function Header() {
           <span>{" Andrika"}</span>
         </HashLink>
         <input onChange={toggleTheme} className="container_toggle" type="checkbox" id="switch" name="mode" />
-        <label htmlFor="switch">Toggle</label>
+        {/* <label htmlFor="switch">Toggle</label> */}
         <nav className={isActive ? "active" : ""}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
             Home
