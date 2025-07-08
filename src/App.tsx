@@ -109,10 +109,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// ✅ Bungkus sebagai komponen React
-const GlobalStyleComponent: React.FC = () => {
-  return <GlobalStyle />;
-};
+
 
 function AnimatedBackground() {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
@@ -200,10 +197,12 @@ function AnimatedBackground() {
   );
 }
 
+
+
 function App() {
   return (
     <>
-      <GlobalStyleComponent />
+      <GlobalStyle />
       <AnimatedBackground />
       <div style={{ position: "relative", zIndex: 1 }}>
         <Header />
