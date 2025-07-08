@@ -109,8 +109,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-
-
 function AnimatedBackground() {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
 
@@ -197,8 +195,6 @@ function AnimatedBackground() {
   );
 }
 
-
-
 function App() {
   return (
     <>
@@ -207,6 +203,7 @@ function App() {
       <div style={{ position: "relative", zIndex: 1 }}>
         <Header />
         <Main />
+        {/* Certificate section below Project section */}
         <Footer />
       </div>
     </>

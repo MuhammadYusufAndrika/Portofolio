@@ -15,6 +15,7 @@ import reactIconUrl from "../../assets/react-icon.svg";
 import sassIconUrl from "../../assets/sass-icon.svg";
 import typescriptIconUrl from "../../assets/typescript-icon.svg";
 import vueIconUrl from "../../assets/vue-icon.svg";
+import { Certificate } from "../Certificate/Certificate";
 
 export function Main() {
   return (
@@ -203,6 +204,7 @@ export function Main() {
       <Hero></Hero>
       <About></About>
       <Project></Project>
+      <Certificate />
       <Contact></Contact>
     </Container>
   );
