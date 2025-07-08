@@ -6,6 +6,7 @@ import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
 import "react-toastify/dist/ReactToastify.css";
 
+// Pisahkan definisi global style
 const GlobalStyle = createGlobalStyle`
   :root {
     --pink: #E31F71;
@@ -108,6 +109,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// ✅ Bungkus sebagai komponen React
+const GlobalStyleComponent: React.FC = () => {
+  return <GlobalStyle />;
+};
+
 function AnimatedBackground() {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
 
@@ -122,7 +128,6 @@ function AnimatedBackground() {
     canvas.width = width;
     canvas.height = height;
 
-    // Particle config
     const particles = Array.from({ length: 60 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -133,7 +138,6 @@ function AnimatedBackground() {
       color: `rgba(${Math.floor(Math.random() * 40)},${Math.floor(Math.random() * 80 + 80)},${Math.floor(Math.random() * 180 + 60)},0.7)`,
     }));
 
-    // Responsive resize
     const handleResize = () => {
       width = window.innerWidth;
       height = window.innerHeight;
@@ -147,14 +151,12 @@ function AnimatedBackground() {
     function animate() {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
-      // Gradient background
       const gradient = ctx.createLinearGradient(0, 0, width, height);
       gradient.addColorStop(0, "#0a1833");
       gradient.addColorStop(1, "#01203a");
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
 
-      // Draw particles
       for (let p of particles) {
         ctx.save();
         ctx.globalAlpha = p.alpha;
@@ -166,10 +168,8 @@ function AnimatedBackground() {
         ctx.fill();
         ctx.restore();
 
-        // Move
         p.x += p.dx;
         p.y += p.dy;
-        // Bounce
         if (p.x < 0 || p.x > width) p.dx *= -1;
         if (p.y < 0 || p.y > height) p.dy *= -1;
       }
@@ -199,10 +199,11 @@ function AnimatedBackground() {
     />
   );
 }
+
 function App() {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyleComponent />
       <AnimatedBackground />
       <div style={{ position: "relative", zIndex: 1 }}>
         <Header />
