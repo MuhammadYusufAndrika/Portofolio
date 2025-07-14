@@ -5,10 +5,10 @@ import React from "react";
 // Example certificate data
 const certificates = [
   {
-    title: "React Developer Certificate",
-    issuer: "Coursera",
+    title: "Belajar Dasar Pemrograman Web",
+    issuer: "Dicoding",
     date: "June 2024",
-    link: "https://www.coursera.org/account/accomplishments/certificate/EXAMPLE1",
+    link: "https://www.dicoding.com/certificates/NVP7Q491GZR0",
   },
   {
     title: "Frontend Web Development",

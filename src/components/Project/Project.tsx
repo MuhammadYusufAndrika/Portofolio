@@ -8,6 +8,8 @@ import logbookweb from "../../assets/logbookweb.png";
 import simikoweb from "../../assets/simiko.png";
 import financialapp from "../../assets/financialapp.png";
 import recomendationapp from "../../assets/recomendation.png";
+import todolist from "../../assets/todolist.png";
+import stockprice from "../../assets/stockprice.png";
 
 export function Project() {
   return (
@@ -235,6 +237,80 @@ export function Project() {
           </motion.div>
 
           {/* Project 7 */}
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://stockpricepredictionbbca.streamlit.app/" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="https://stockpricepredictionbbca.streamlit.app/" target="_blank" rel="noreferrer">
+                <img
+                  src={stockprice}
+                  alt="SPN Web"
+                  style={{
+                    width: "100%",
+                    height: "100%", // atau height sesuai kebutuhan
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Stock Price Prediction Website</h3>
+              <p>Creating model for stock price prediction and web application focused on post-stock-split analysis using historical stock data from BBCA. Implemented using Python (Scikit-learn) for model development and using streamlit to deploy frontendq.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Python</li>
+                <li>Streamlit</li>
+              </ul>
+            </footer>
+          </motion.div>
+
+
+          {/* Project 8 */}
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="" target="_blank" rel="noreferrer">
+                <img
+                  src={todolist}
+                  alt="SPN Web"
+                  style={{
+                    width: "100%",
+                    height: "100%", // atau height sesuai kebutuhan
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Todolist React</h3>
+              <p>Creating A simple Todolist using react</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>ReactJS</li>
+              </ul>
+            </footer>
+          </motion.div>
+
+          {/* Project  */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
