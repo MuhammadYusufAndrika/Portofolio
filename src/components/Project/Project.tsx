@@ -1,11 +1,13 @@
-
 import { Container } from "./styles";
 import githubIconUrl from "../../assets/github.svg";
 import externalLinkUrl from "../../assets/external-link.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import spnweb from "../../assets/SPNWEB.png";
-
-
+import himpunanwebsite from "../../assets/himpunanweb.png";
+import logbookweb from "../../assets/logbookweb.png";
+import simikoweb from "../../assets/simiko.png";
+import financialapp from "../../assets/financialapp.png";
+import recomendationapp from "../../assets/recomendation.png";
 
 export function Project() {
   return (
@@ -16,7 +18,10 @@ export function Project() {
           {/* Project 1 */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
               <div className="project-links">
                 <a href="https://github.com/MuhammadYusufAndrika/SPN-Web.git" target="_blank" rel="noreferrer">
                   <img src={githubIconUrl} alt="Visit site" />
@@ -27,7 +32,7 @@ export function Project() {
               <a href="https://github.com/MuhammadYusufAndrika/SPN-Web.git" target="_blank" rel="noreferrer">
                 <img src={spnweb} alt="SPN Web" />
               </a>
-              <h3>Company Profile: Surya Prima Net</h3>
+              <h3>Fullstack Company Profile: Surya Prima Net</h3>
               <p> Creating a dynamic Company Profile Website using Laravel 11 for Backend and FrontEnd using Laravel Blade by using Bootstrap 5.3 for styling. Migrations and models are used to manage data in the database </p>
             </div>
             <footer>
@@ -42,21 +47,36 @@ export function Project() {
           {/* Project 2 */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
               <div className="project-links">
-                <a href="https://github.com/MuhammadYusufAndrika/SPN-Web.git" target="_blank" rel="noreferrer">
+                <a href="https://github.com/MuhammadYusufAndrika/Himpunan-Website.git" target="_blank" rel="noreferrer">
                   <img src={githubIconUrl} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>FrontEnd: Website Himpunan Mahasiswa Informatika</h3>
-              <p>create a set website frontend using vue js with my team. This website is used by the association as the main website </p>
+              <a href="https://github.com/MuhammadYusufAndrika/SPN-Web.git" target="_blank" rel="noreferrer">
+                <img
+                  src={himpunanwebsite}
+                  alt="SPN Web"
+                  style={{
+                    width: "100%",
+                    height: "100%", // atau height sesuai kebutuhan
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Fullstack: Informatics Student Association Website</h3>
+              <p> Creating a dynamic Company Profile Website using Laravel 11 for Backend and FrontEnd using Laravel Blade by using Bootstrap 5.3 for styling. Migrations and models are used to manage data in the database </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>Vue Js</li>
-                <li>Javascript</li>
+                <li>Laravel 11</li>
+                <li>Bootstrap 5.3</li>
                 <li>MysqlDB</li>
               </ul>
             </footer>
@@ -65,21 +85,36 @@ export function Project() {
           {/* Project 3 */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
               <div className="project-links">
-                <a href="https://github.com/MuhammadYusufAndrika/FinalProject-Uangku-Pemrog.git" target="_blank" rel="noreferrer">
+                <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
                   <img src={githubIconUrl} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>financial record app</h3>
-              <p>Using C# programming language with the use of bunifu framework as UI styling.</p>
+              <a href="https://gendon-nu.vercel.app/" target="_blank" rel="noreferrer">
+                <img
+                  src={logbookweb}
+                  alt="SPN Web"
+                  style={{
+                    width: "100%",
+                    height: "100%", // atau height sesuai kebutuhan
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Online Logbook Website</h3>
+              <p>I built a modern online logbook with Next.js to help my friend create memory.</p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>C#</li>
-                <li>MySqlDB</li>
+                <li>Next Js</li>
+                <li>Tailwind</li>
               </ul>
             </footer>
           </motion.div>
@@ -87,7 +122,125 @@ export function Project() {
           {/* Project 4 */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="https://simiko.software/" target="_blank" rel="noreferrer">
+                <img
+                  src={simikoweb}
+                  alt="SPN Web"
+                  style={{
+                    width: "100%",
+                    height: "100%", // atau height sesuai kebutuhan
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Simiko Software</h3>
+              <p>I served as the Scrum Master for the development of SIMIKO, a student organization management system. In addition to facilitating Scrum processes, I also contributed to some parts of the technical development.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Laravel</li>
+                <li>Filament</li>
+                <li>Flutter (for user)</li>
+              </ul>
+            </footer>
+          </motion.div>
+          
+          {/* Project 5 */}
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/MuhammadYusufAndrika/FinalProject-Uangku-Pemrog" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="" target="_blank" rel="noreferrer">
+                <img
+                  src={financialapp}
+                  alt="SPN Web"
+                  style={{
+                    width: "100%",
+                    height: "100%", // atau height sesuai kebutuhan
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Financial Record App</h3>
+              <p>Helping in the development of a financial record app using C# and its UI using the Bunifu UI framework.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>C#</li>
+                <li>Bunifu UI</li>
+                <li>MySQl</li>
+              </ul>
+            </footer>
+          </motion.div>
+
+          
+          {/* Project 6 */}
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/MuhammadYusufAndrika/Tripskuy" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="https://github.com/MuhammadYusufAndrika/Tripskuy" target="_blank" rel="noreferrer">
+                <img
+                  src={recomendationapp}
+                  alt="SPN Web"
+                  style={{
+                    width: "100%",
+                    height: "100%", // atau height sesuai kebutuhan
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Recomendation System</h3>
+              <p>Creating a model destination recomendation using python keras .</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Python</li>
+                <li>Tensor Flow</li>
+                <li>Colab</li>
+              </ul>
+            </footer>
+          </motion.div>
+
+          {/* Project 7 */}
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
               <div className="project-links">
                 <a href="https://github.com/MuhammadYusufAndrika/Smart-Pet-Feeder-.git" target="_blank" rel="noreferrer">
                   <img src={githubIconUrl} alt="Visit site" />
@@ -105,36 +258,8 @@ export function Project() {
             </footer>
           </motion.div>
 
-          {/* Project 5 */}
-          {/* <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
-            <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <div className="project-links">
-                <a href="https://github.com/CodeVinayak/Jupyter-Notebook/tree/main/Credit%20Risk%20Analysis" target="_blank" rel="noreferrer">
-                  <img src={githubIconUrl} alt="Visit site" />
-                </a>
-                <a href="https://github.com/CodeVinayak/Jupyter-Notebook/blob/main/Credit%20Risk%20Analysis/Credit_Risk_Analysis.ipynb" target="_blank" rel="noreferrer">
-                  <img src={externalLinkUrl} alt="Visit site" />
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>Credit Risk Analysis Project</h3>
-              <p>
-                Developed a highly accurate credit risk classification model using XGBoost, achieving 100% precision, recall, and F1-scores for predicting loan defaults.Implemented rigorous data preprocessing, feature engineering, and hyperparameter tuning on imbalanced credit risk data, employing ensemble methods, cross-validation, and model interpretation techniques.
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>XGBoost</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
-              </ul>
-            </footer>
-          </motion.div> */}
+          
+         
 
           {/* Project 6 */}
           {/* <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
@@ -221,7 +346,10 @@ export function Project() {
           {/* Project 9: More on Github */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Folder</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
               <div className="project-links">
                 <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
                   <img src={externalLinkUrl} alt="Visit site" />
@@ -239,4 +367,4 @@ export function Project() {
       </div>
     </Container>
   );
-};
+}
