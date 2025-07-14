@@ -71,7 +71,7 @@ export function Project() {
                 />
               </a>
               <h3>Fullstack: Informatics Student Association Website</h3>
-              <p> Creating a dynamic Company Profile Website using Laravel 11 for Backend and FrontEnd using Laravel Blade by using Bootstrap 5.3 for styling. Migrations and models are used to manage data in the database </p>
+              <p> Creating a dynamic student association Website using Laravel 11 for Backend and FrontEnd using Laravel Blade by using Bootstrap 5.3 for styling. Migrations and models are used to manage data in the database </p>
             </div>
             <footer>
               <ul className="tech-list">
