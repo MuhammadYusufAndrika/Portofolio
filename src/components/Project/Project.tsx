@@ -32,7 +32,16 @@ export function Project() {
             </header>
             <div className="body">
               <a href="https://github.com/MuhammadYusufAndrika/SPN-Web.git" target="_blank" rel="noreferrer">
-                <img src={spnweb} alt="SPN Web" />
+                <img 
+                  src={spnweb} 
+                  alt="SPN Web" 
+                  style={{
+                    width: "100%",
+                    height: "200px",
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
               </a>
               <h3>Fullstack Company Profile: Surya Prima Net</h3>
               <p> Creating a dynamic Company Profile Website using Laravel 11 for Backend and FrontEnd using Laravel Blade by using Bootstrap 5.3 for styling. Migrations and models are used to manage data in the database </p>
@@ -60,13 +69,13 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <a href="https://github.com/MuhammadYusufAndrika/SPN-Web.git" target="_blank" rel="noreferrer">
+              <a href="https://github.com/MuhammadYusufAndrika/Himpunan-Website.git" target="_blank" rel="noreferrer">
                 <img
                   src={himpunanwebsite}
-                  alt="SPN Web"
+                  alt="Himpunan Website"
                   style={{
                     width: "100%",
-                    height: "100%", // atau height sesuai kebutuhan
+                    height: "200px",
                     objectFit: "cover",
                     borderRadius: "1rem",
                   }}
@@ -101,10 +110,10 @@ export function Project() {
               <a href="https://gendon-nu.vercel.app/" target="_blank" rel="noreferrer">
                 <img
                   src={logbookweb}
-                  alt="SPN Web"
+                  alt="Logbook Web"
                   style={{
                     width: "100%",
-                    height: "100%", // atau height sesuai kebutuhan
+                    height: "200px",
                     objectFit: "cover",
                     borderRadius: "1rem",
                   }}
@@ -138,10 +147,10 @@ export function Project() {
               <a href="https://simiko.software/" target="_blank" rel="noreferrer">
                 <img
                   src={simikoweb}
-                  alt="SPN Web"
+                  alt="Simiko Software"
                   style={{
                     width: "100%",
-                    height: "100%", // atau height sesuai kebutuhan
+                    height: "200px",
                     objectFit: "cover",
                     borderRadius: "1rem",
                   }}
@@ -173,13 +182,13 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="https://github.com/MuhammadYusufAndrika/FinalProject-Uangku-Pemrog" target="_blank" rel="noreferrer">
                 <img
                   src={financialapp}
-                  alt="SPN Web"
+                  alt="Financial App"
                   style={{
                     width: "100%",
-                    height: "100%", // atau height sesuai kebutuhan
+                    height: "200px",
                     objectFit: "cover",
                     borderRadius: "1rem",
                   }}
@@ -215,10 +224,10 @@ export function Project() {
               <a href="https://github.com/MuhammadYusufAndrika/Tripskuy" target="_blank" rel="noreferrer">
                 <img
                   src={recomendationapp}
-                  alt="SPN Web"
+                  alt="Recommendation App"
                   style={{
                     width: "100%",
-                    height: "100%", // atau height sesuai kebutuhan
+                    height: "200px",
                     objectFit: "cover",
                     borderRadius: "1rem",
                   }}
@@ -253,10 +262,10 @@ export function Project() {
               <a href="https://stockpricepredictionbbca.streamlit.app/" target="_blank" rel="noreferrer">
                 <img
                   src={stockprice}
-                  alt="SPN Web"
+                  alt="Stock Price Prediction"
                   style={{
                     width: "100%",
-                    height: "100%", // atau height sesuai kebutuhan
+                    height: "200px",
                     objectFit: "cover",
                     borderRadius: "1rem",
                   }}
@@ -288,13 +297,13 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
                 <img
                   src={todolist}
-                  alt="SPN Web"
+                  alt="Todolist React"
                   style={{
                     width: "100%",
-                    height: "100%", // atau height sesuai kebutuhan
+                    height: "200px",
                     objectFit: "cover",
                     borderRadius: "1rem",
                   }}
