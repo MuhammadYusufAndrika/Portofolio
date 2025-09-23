@@ -198,7 +198,7 @@ function AnimatedBackground() {
 function App() {
   return (
     <>
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
       <AnimatedBackground />
       <div style={{ position: "relative", zIndex: 1 }}>
         <Header />
