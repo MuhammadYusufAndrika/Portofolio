@@ -17,7 +17,7 @@ const certificates = [
     link: "https://www.linkedin.com/in/muhammadyusufandrika/",
   },
   {
-    title: "Machine Learning",
+    title: "Machine Learning - Coursera Deep Learning",
     issuer: "Coursera",
     date: "April 2024",
     link: "https://www.linkedin.com/in/muhammadyusufandrika/",
