@@ -322,7 +322,7 @@ export function Project() {
 
 
           {/* Project  */}
-          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+          {/* <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                 {" "}
@@ -343,7 +343,7 @@ export function Project() {
                 <li>C</li>
               </ul>
             </footer>
-          </motion.div>
+          </motion.div> */}
 
           
          
