@@ -62,6 +62,16 @@ export function About() {
         <h2>About me</h2>
         <div ref={containerRef} style={{ position: "relative" }}>
           <VariableProximity
+            label={`I am a 7th semester student of S1 Informatics with a concentration in Database Programming. I have high self-confidence strong work spirit, and sufficient experience in web development and machine learning. With my programming skills, I am able to bring creative and efficient solutions in solving various problems in the field of web development. In addition, I also have a keen interest in the exploration and development of skills in machine learning, particularly to address the challenges that arise in the development of artificial intelligence. With this background, I am confident that I can make a positive contribution. Let's bring your website dreams to reality together!\n\nHere are my main skills:`}
+            className={"variable-proximity-demo"}
+            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+            containerRef={containerRef}
+            radius={100}
+            falloff="linear"
+          />{" "}
+          <br /> <br />
+          {/* <VariableProximity
             label={`Hi there! I'm Yusuf Andrika, a website developer with a passion for creating custom online experiences for my clients. With a skill set including HTML, CSS, JavaScript, and Php, I have the tools to bring any website vision to life.\n\nSo if you're in need of a new website or just looking to revamp your current online presence, I'd love to chat and see how I can help. Let's bring your website dreams to reality together!\n\nHere are my main skills:`}
             className={"variable-proximity-demo"}
             fromFontVariationSettings="'wght' 400, 'opsz' 9"
@@ -69,16 +79,7 @@ export function About() {
             containerRef={containerRef}
             radius={100}
             falloff="linear"
-          /> <br /> <br />
-          <VariableProximity
-            label={`Hi there! I'm Yusuf Andrika, a website developer with a passion for creating custom online experiences for my clients. With a skill set including HTML, CSS, JavaScript, and Php, I have the tools to bring any website vision to life.\n\nSo if you're in need of a new website or just looking to revamp your current online presence, I'd love to chat and see how I can help. Let's bring your website dreams to reality together!\n\nHere are my main skills:`}
-            className={"variable-proximity-demo"}
-            fromFontVariationSettings="'wght' 400, 'opsz' 9"
-            toFontVariationSettings="'wght' 1000, 'opsz' 40"
-            containerRef={containerRef}
-            radius={100}
-            falloff="linear"
-          />
+          /> */}
           <div className="hard-skills" style={{ marginTop: "2rem", display: "flex", flexWrap: "wrap", gap: "1.2rem", justifyContent: "center" }}>
             {[
               { src: wordpressIconUrl, alt: "Wordpress" },
@@ -91,6 +92,7 @@ export function About() {
               { src: cssIconUrl, alt: "CSS" },
               { src: bootstrapIconUrl, alt: "Bootstrap" },
               { src: jsIconUrl, alt: "JavaScript" },
+              
             ].map((icon, idx) => (
               <div
                 className="hability super-anim-logo"
@@ -106,14 +108,14 @@ export function About() {
                   height: 60,
                   transition: "transform 0.35s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.35s, background 0.35s",
                   cursor: "pointer",
-                  position: "relative"
+                  position: "relative",
                 }}
-                onMouseEnter={e => {
+                onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "scale(1.18) rotate(-8deg)";
                   e.currentTarget.style.boxShadow = "0 6px 32px 0 #23ce6b88, 0 0 0 8px #1e3c7233";
                   e.currentTarget.style.background = "radial-gradient(circle at 60% 40%, #fff 0%, #23ce6b 60%, #1e3c72 100%)";
                 }}
-                onMouseLeave={e => {
+                onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "scale(1) rotate(0deg)";
                   e.currentTarget.style.boxShadow = "0 2px 16px 0 rgba(35, 206, 107, 0.15)";
                   e.currentTarget.style.background = "linear-gradient(135deg, #23ce6b 0%, #1e3c72 100%)";
@@ -126,7 +128,7 @@ export function About() {
                     width: 32,
                     height: 32,
                     filter: "drop-shadow(0 2px 8px #23ce6b55)",
-                    transition: "filter 0.3s"
+                    transition: "filter 0.3s",
                   }}
                 />
               </div>

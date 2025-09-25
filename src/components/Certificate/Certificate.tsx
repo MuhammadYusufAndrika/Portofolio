@@ -17,8 +17,8 @@ const certificates = [
     link: "https://www.linkedin.com/in/muhammadyusufandrika/",
   },
   {
-    title: "Belajar Membuat Aplikasi Web dengan React - Dicoding",
-    issuer: "freeCodeCamp",
+    title: "Machine Learning",
+    issuer: "Coursera",
     date: "April 2024",
     link: "https://www.linkedin.com/in/muhammadyusufandrika/",
   },

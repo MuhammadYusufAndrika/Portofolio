@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { ShinyText } from "./ShinyText";
 import { Container } from "./styles";
-import Illustration from "../../assets/illustration.svg";
+import Illustration from "../../assets/hero1.jpg";
 import { NavHashLink } from "react-router-hash-link";
 import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
