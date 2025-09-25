@@ -72,12 +72,12 @@ export function Form() {
           field="message"
           errors={state.errors}
         />
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey="6LfkhMQrAAAAAG8OnFbg8VGqiXqPrM45Mj1gh7jX"
           onChange={(e) => {
             setIsHuman(true)
           }}
-        ></ReCAPTCHA>
+        ></ReCAPTCHA> */}
         <button
           type="submit"
           disabled={state.submitting || !validEmail || !message || !isHuman}
