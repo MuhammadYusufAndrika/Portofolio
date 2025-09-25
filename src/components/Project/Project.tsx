@@ -320,6 +320,7 @@ export function Project() {
           </motion.div>
 
 
+
           {/* Project  */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>
