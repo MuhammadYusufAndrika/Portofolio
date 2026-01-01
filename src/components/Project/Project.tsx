@@ -10,6 +10,9 @@ import financialapp from "../../assets/financialapp.png";
 import recomendationapp from "../../assets/recomendation.png";
 import todolist from "../../assets/todolist.png";
 import stockprice from "../../assets/stockprice.png";
+import lokerokutimur from "../../assets/lokerokutimur.png";
+import contractmanagement from "../../assets/contractmanagement.png";
+import attadanceemployee from "../../assets/attadanceemployee.png";
 
 export function Project() {
   return (
@@ -17,6 +20,123 @@ export function Project() {
       <h2>My Projects</h2>
       <div className="projects">
         <AnimatePresence>
+
+          {/* Project 1 ahah */}
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
+                <img
+                  src={lokerokutimur}
+                  alt="Stock Price Prediction"
+                  style={{
+                    width: "100%",
+                    height: "200px",
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Job Portal OkuTimur</h3>
+              <p>Loker Oku Timur is a web-based job portal built with Laravel 11 and Filament 3.x, featuring a multi-panel architecture for Admin, Company, and User roles. The platform includes company registration with admin approval and automated email notifications, job management with location and salary filters, company profiles with logos, deadline countdown badges, and a dynamic job application system with CV and document uploads. It implements a two-stage recruitment workflow, allowing companies to screen applications internally before sending bulk, customizable email notifications to applicants. The system is equipped with real-time dashboard analytics, data integrity through cascade deletion, responsive branded email templates, and in-dashboard CV preview, leveraging Tailwind CSS, Livewire, Gmail SMTP, Spatie Permissions, and PDF viewing capabilities.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Laraval</li>
+                <li>Filament</li>
+                <li>Tailwind</li>
+                <li>SMTP</li>
+                <li>MySql</li>
+              </ul>
+            </footer>
+          </motion.div>
+
+          {/* Project 2 ahah */}
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="https://kontrak.sitedahana.my.id" target="_blank" rel="noreferrer">
+                <img
+                  src={contractmanagement}
+                  alt="Stock Price Prediction"
+                  style={{
+                    width: "100%",
+                    height: "200px",
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Employee Contract Management</h3>
+              <p>Employee Contract Management PT Dahana System is a web-based application designed to manage employee contracts efficiently through a centralized dashboard. The system provides real-time contract monitoring, including total, active, expiring, and expired contracts, with visual alerts for upcoming expirations. It features employee and contract management modules, contract history tracking, document repository, and role-based access for administrators. The platform enables HR teams to monitor contract status, prevent overdue contracts, and streamline administrative processes through a structured and user-friendly interface.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Laraval</li>
+                <li>Boostratp</li>
+                <li>MySql</li>
+              </ul>
+            </footer>
+          </motion.div>
+
+          {/* Project 3 ahah */}  
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/MuhammadYusufAndrika" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="https://sitedahana.my.id/" target="_blank" rel="noreferrer">
+                <img
+                  src={attadanceemployee}
+                  alt="Stock Price Prediction"
+                  style={{
+                    width: "100%",
+                    height: "200px",
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Attadance Site Employee</h3>
+              <p>Employee Attendance Management PT Dahana System is a web-based application designed to monitor and manage daily employee attendance in real time. The system provides a centralized dashboard displaying attendance statistics, including present, leave, sick, and absent employees, along with total workforce data. It features detailed attendance records with check-in and check-out tracking, employee role information, and status monitoring to support accurate reporting. The platform helps organizations improve attendance transparency, streamline workforce monitoring, and support efficient human resource management through a structured and user-friendly interface.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Laraval</li>
+                <li>Tailwind</li>
+                <li>MySql</li>
+              </ul>
+            </footer>
+          </motion.div>
+
           {/* Project 1 */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
             <header>

@@ -62,7 +62,8 @@ export function About() {
         <h2>About me</h2>
         <div ref={containerRef} style={{ position: "relative" }}>
           <VariableProximity
-            label={`I am a 7th semester student of S1 Informatics with a concentration in Database Programming. I have high self-confidence strong work spirit, and sufficient experience in web development and machine learning. With my programming skills, I am able to bring creative and efficient solutions in solving various problems in the field of web development. In addition, I also have a keen interest in the exploration and development of skills in machine learning, particularly to address the challenges that arise in the development of artificial intelligence. With this background, I am confident that I can make a positive contribution. Let's bring your website dreams to reality together!\n\nHere are my main skills:`}
+            label={`I am an Informatics graduate candidate with a concentration in Database Programming who has completed the thesis defense and is currently awaiting graduation (yudisium). I have strong self-confidence, a high work ethic, and solid experience in web development, particularly in building efficient, scalable, and well-structured web-based systems. With a strong programming 
+            foundation, I am capable of analyzing problems critically and delivering practical, solution-oriented implementations that align with business and technical requirements. I am highly motivated, adaptable, and ready to contribute effectively in dynamic IT environments. \n\nHere are my main skills:`}
             className={"variable-proximity-demo"}
             fromFontVariationSettings="'wght' 400, 'opsz' 9"
             toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -92,7 +93,6 @@ export function About() {
               { src: cssIconUrl, alt: "CSS" },
               { src: bootstrapIconUrl, alt: "Bootstrap" },
               { src: jsIconUrl, alt: "JavaScript" },
-              
             ].map((icon, idx) => (
               <div
                 className="hability super-anim-logo"
@@ -110,7 +110,6 @@ export function About() {
                   cursor: "pointer",
                   position: "relative",
                 }}
-                
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "scale(1.18) rotate(-8deg)";
                   e.currentTarget.style.boxShadow = "0 6px 32px 0 #23ce6b88, 0 0 0 8px #1e3c7233";

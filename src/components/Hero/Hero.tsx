@@ -25,7 +25,7 @@ export function Hero() {
           Web Developer
         </motion.h3>
         <motion.p className="small-resume" initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.8, type: "spring", stiffness: 60, damping: 13 }}>
-          Student at Amikom Yogyakarta University
+          Undergraduate Student at Amikom Yogyakarta University
         </motion.p>
         <BrowserRouter>
           <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 1, duration: 0.5, type: "spring", stiffness: 60, damping: 13 }}>
