@@ -110,6 +110,7 @@ export function About() {
                   cursor: "pointer",
                   position: "relative",
                 }}
+                
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "scale(1.18) rotate(-8deg)";
                   e.currentTarget.style.boxShadow = "0 6px 32px 0 #23ce6b88, 0 0 0 8px #1e3c7233";
