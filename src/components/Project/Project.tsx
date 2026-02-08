@@ -1,6 +1,5 @@
 import { Container } from "./styles";
 import githubIconUrl from "../../assets/github.svg";
-import externalLinkUrl from "../../assets/external-link.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import spnweb from "../../assets/SPNWEB.png";
 import himpunanwebsite from "../../assets/himpunanweb.png";
