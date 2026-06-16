@@ -62,8 +62,11 @@ export function About() {
         <h2>About me</h2>
         <div ref={containerRef} style={{ position: "relative" }}>
           <VariableProximity
-            label={`I am an Informatics graduate candidate with a concentration in Database Programming who has completed the thesis defense and is currently awaiting graduation (yudisium). I have strong self-confidence, a high work ethic, and solid experience in web development, particularly in building efficient, scalable, and well-structured web-based systems. With a strong programming 
-            foundation, I am capable of analyzing problems critically and delivering practical, solution-oriented implementations that align with business and technical requirements. I am highly motivated, adaptable, and ready to contribute effectively in dynamic IT environments. \n\nHere are my main skills:`}
+            label={`I am an Informatics graduate with a concentration in Database Programming. I have strong self-confidence, a high work ethic, and 
+solid experience in web development, particularly in building efficient, scalable, and well-structured web-based systems. With a 
+strong programming foundation, I am capable of analyzing problems critically and delivering practical, solution-oriented 
+implementations that align with business and technical requirements. I am highly motivated, adaptable, and ready to contribute 
+effectively in dynamic IT environments\n\nHere are my main skills:`}
             className={"variable-proximity-demo"}
             fromFontVariationSettings="'wght' 400, 'opsz' 9"
             toFontVariationSettings="'wght' 1000, 'opsz' 40"

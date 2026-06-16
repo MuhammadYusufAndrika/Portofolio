@@ -34,7 +34,25 @@ const experiences = [
     //   "Software Testing (UAT, Black-box)",
       "Communication & Collaboration",
       "Analytical Thinking",
-    ],
+    ]
+  },
+  {
+    title: "Fullstack Developer",
+    company: "PT Dahana Subang",
+    period: "Februari 2026 - Present",
+    description:
+      "Responsible for analyzing business requirements, designing system solutions, and developing internal web-based applications to support company operations. Prepared and maintained system requirement documentation, including Business Requirement Documents (BRD), business flowcharts, change requests, and feature enhancement specifications. Collaborated with stakeholders and development teams to translate business processes into effective digital solutions. Developed and maintained various internal applications, including Employee Attendance System, Contract Management System, and Company Regulation Management System, while supporting application testing, deployment, maintenance, and continuous system improvements.",
+    skills: [
+      "Requirement Analysis",
+      "Business Process Modeling (DFD, Use Case)",
+      "Database Design (ERD, SQL)",
+      "Development Systems",
+      "System Documentation (SRS, BRD, User Manual)",
+      "UML",
+    //   "Software Testing (UAT, Black-box)",
+      "Communication & Collaboration",
+      "Analytical Thinking",
+    ]
   },
 ];
 

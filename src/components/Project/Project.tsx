@@ -12,6 +12,7 @@ import stockprice from "../../assets/stockprice.png";
 import lokerokutimur from "../../assets/lokerokutimur.png";
 import contractmanagement from "../../assets/contractmanagement.png";
 import attadanceemployee from "../../assets/attadanceemployee.png";
+import drep from "../../assets/drep.png"
 
 export function Project() {
   return (
@@ -19,6 +20,45 @@ export function Project() {
       <h2>My Projects</h2>
       <div className="projects">
         <AnimatePresence>
+
+          <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                {" "}
+                <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>{" "}
+              </svg>
+              <div className="project-links">
+                <a href="https://drep.dahana.id" target="_blank" rel="noreferrer">
+                  <img src={githubIconUrl} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <a href="https://drep.dahana.id" target="_blank" rel="noreferrer">
+                <img
+                  src={drep}
+                  alt="Drep"
+                  style={{
+                    width: "100%",
+                    height: "200px",
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                  }}
+                />
+              </a>
+              <h3>Dahana Regulation Portal</h3>
+              <p>This website is a Policy & Document Management System, a web-based platform designed to centrally manage company documents, policies, and Standard Operating Procedures (SOPs) in a structured, secure, and efficient manner. The system replaces manual document storage methods such as shared folders, email attachments, and physical files with a centralized digital repository that provides document organization based on departments and categories, advanced search capabilities, version management, and role-based access control (RBAC). Every user activity, including viewing, downloading, uploading, updating, and deleting documents, is recorded through an audit log to ensure transparency and traceability. The system also supports confidential document management, document revision with version history, automatic watermarking for downloaded files, and monitoring dashboards to help administrators maintain document accuracy, security, and availability across the organization</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Laraval Livewire</li>
+                <li>Reactjs</li>
+                <li>Tailwind</li>
+                <li>SMTP</li>
+                <li>MySql</li>
+              </ul>
+            </footer>
+          </motion.div>
 
           {/* Project 1 ahah */}
           <motion.div className="project" initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} exit={{ opacity: 0, rotateY: 90 }} transition={{ duration: 0.6 }}>
